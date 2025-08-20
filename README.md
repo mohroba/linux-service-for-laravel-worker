@@ -177,7 +177,3 @@ This script makes it easy to:
 * Run **Laravel Scheduler** with robust systemd integration
 
 All services are **persistent**, auto-restarting, and fully **logged with journald**.
-
----
-
-Would you like me to also include a **diagram showing how workers, scheduler, and Reverb fit into the Laravel ecosystem** (queues + scheduler + websocket flow) in the README? That could make it easier for new developers.
