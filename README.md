@@ -40,30 +40,31 @@ The script ensures your Laravel app runs production-ready services in the backgr
 
 ---
 
-## ⚡ Usage
+##  Usage
 
-1. Save the script to a file, for example:
+1. **Save the script** to your local machine, e.g.:
 
-   ```bash
-   curl -O https://example.com/laravel-services-setup.sh
-   chmod +x laravel-services-setup.sh
-   ```
+    ```bash
+    curl -L -o workers_setup.sh https://raw.githubusercontent.com/mohroba/linux-service-for-laravel-worker/master/workers_setup.sh
+    chmod +x workers_setup.sh
+    ```
 
-2. Run the script:
+2. **Run the setup script**:
 
-   ```bash
-   ./laravel-services-setup.sh
-   ```
+    ```bash
+    ./workers_setup.sh
+    ```
 
-3. Follow the prompts:
+3. **Follow the interactive prompts** to configure everything:
 
-   * Project path (`/var/www/my-laravel-app`)
-   * Service user & group (default: `www-data`)
-   * PHP binary path (default auto-detected)
-   * Queue names (`default,email,notifications,...`)
-   * Number of workers per queue
-   * Reverb host & port (default: `127.0.0.1:6001`)
-   * Scheduler mode (`timer` or `work`)
+    - **Project Path** (e.g., `/var/www/your-laravel-project`)
+    - **User & Group** to run services (default: `www-data`)
+    - **PHP Binary Path** (auto-detected or set manually)
+    - **Queue Names** (comma-separated)
+    - **Worker Instances** per queue
+    - **Reverb Host & Port**
+    - **Scheduler Mode** (`timer` or `work`)
+
 
 The script will then:
 
