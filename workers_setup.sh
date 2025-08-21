@@ -16,7 +16,7 @@ fatal() { echo "ERROR: $*" >&2; exit 1; }
 echo "=== Laravel Services Setup (Queue Workers, Reverb, Scheduler) ==="
 
 # ───────────────────────────  Collect Inputs  ───────────────────────────
-PROJECT_PATH=$(prompt_default "Enter the path to your Laravel project" "/var/www/sajed-backend/program")
+PROJECT_PATH=$(prompt_default "Enter the path to your Laravel project" "/var/www/html")
 [[ -d "$PROJECT_PATH" ]] || fatal "Project path not found: $PROJECT_PATH"
 
 SERVICE_USER=$(prompt_default "Enter the user to run the services as" "www-data")
