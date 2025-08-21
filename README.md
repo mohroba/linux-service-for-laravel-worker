@@ -1,4 +1,4 @@
-# Laravel Services Setup (Queue Workers, Reverb, Scheduler)
+# Automate Laravel systemd Services Setup (Queue Workers, Reverb, Scheduler)
 
 This repository contains a **bash script** to automate the setup and management of Laravel background services with **systemd**.
 It configures and manages:
